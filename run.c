@@ -1675,7 +1675,7 @@ Cell *bltin(Node **a, int n)	/* builtin functions. a[0] is type, a[1] is arg lis
 		else
 			u = getfval(x);
 		tmp = u;
-		srandom((unsigned long) u);
+		srand((unsigned int) u);
 		u = srand_seed;
 		srand_seed = tmp;
 		break;

@@ -135,12 +135,15 @@ extern	Cell	*fieldadr(int);
 extern	void	yyerror(const char *);
 extern	void	bracecheck(void);
 extern	void	bcheck2(int, int, int);
-extern	void	SYNTAX(const char *, ...)
+/* extern	void	SYNTAX(const char *, ...)
     __attribute__((__format__(__printf__, 1, 2)));
 extern	noreturn void	FATAL(const char *, ...)
     __attribute__((__format__(__printf__, 1, 2)));
 extern	void	WARNING(const char *, ...)
-    __attribute__((__format__(__printf__, 1, 2)));
+    __attribute__((__format__(__printf__, 1, 2))); */
+extern	void	SYNTAX(const char*, ...);
+extern	noreturn void	FATAL(const char*, ...);
+extern	void	WARNING(const char*, ...);
 extern	void	error(void);
 extern	void	eprint(void);
 extern	void	bclass(int);

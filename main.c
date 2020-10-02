@@ -138,7 +138,7 @@ int main(int argc, char *argv[])
 
 	/* Set and keep track of the random seed */
 	srand_seed = 1;
-	srandom((unsigned long) srand_seed);
+	srand((unsigned int) srand_seed);
 
 	yyin = NULL;
 	symtab = makesymtab(NSYMTAB/NSYMTAB);
